@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "-"
-var adminprefix = '-'
+var prefix = "-DrD"
+var adminprefix = '-D'
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("-obc")) {
+    if (message.content.startsWith("!drd")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
